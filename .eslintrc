@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": false,
+    "es6": false,
+    "browser": true,
+    "jquery": true
+  },
+  "rules": {
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "no-empty": 0
+  },
+  "extends": ["eslint:recommended"]
+}

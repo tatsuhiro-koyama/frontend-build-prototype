@@ -1,0 +1,21 @@
+# workspace
+
+node_modules
+dist
+distribution
+coverage
+reports
+
+# Misc
+
+*.log
+
+# local
+
+.DS_Store
+
+# Editor Configs
+
+*.iml
+.idea
+.vscode

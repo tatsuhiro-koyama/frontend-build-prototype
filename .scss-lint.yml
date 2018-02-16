@@ -1,0 +1,78 @@
+#
+# scss lint setting yml
+# @see https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+#
+
+linters:
+  # border: 0 -> border: none
+  BorderZero:
+    convention: none
+
+  # color: $body-color のように変数を強制する
+  ColorVariable:
+    enabled: false
+
+  # @extend, @include, @content の記述順をスコープの先頭に強制する
+  DeclarationOrder:
+    enabled: true
+
+  # プロパティの重複
+  # ブラウザ対応等の為に連続 (同じ値を別の表現で設定) させている場合は無視する (別の値を設定するのはNG) (default: false)
+  DuplicateProperty:
+    ignore_consecutive: true
+
+  # ルール間に改行を強制する
+  EmptyLineBetweenBlocks:
+    enabled: true
+
+  # Checks if hexadecimal colors are written in lowercase. You can specify which case with the style option.
+  HexNotation:
+    enabled: true
+
+  # IDセレクタに対するスタイル付けを禁止する
+  IdSelector:
+    enabled: true
+
+  # !importantを禁止
+  ImportantRule:
+    enabled: true
+
+  # Reports when you define the same selector twice in a single sheet
+  MergeableSelector:
+    force_nesting: false
+
+  # ネストの深さを制限する (default: 3)
+  NestingDepth:
+    max_depth: 9
+
+  # Always use placeholder selectors in @extend.
+  PlaceholderInExtend:
+    enabled: true
+
+  # プロパティの記述順を強制する
+  PropertySortOrder:
+    enabled: true
+
+  # セレクタの深さを制限する (default: 3)
+  SelectorDepth:
+    enabled: 9
+
+  # セレクタの名前のルールを定義する (default: hyphenated_lowercase)
+  SelectorFormat:
+    convention: hyphenated_lowercase
+
+  # color: #ff0000 -> color: #f00 のように短い記述を強制
+  Shorthand:
+    enabled: true
+
+  # Split selectors onto separate lines after each comma, and have each individual selector occupy a single line.
+  SingleLinePerSelector:
+    enabled: true
+
+  # 文字列を表すクォートの種類を指定 (default: single_quotes)
+  StringQuotes:
+    style: single_quotes
+
+  # 必要のないvendor-prefixの記述を禁止
+  VendorPrefix:
+    enabled: true
